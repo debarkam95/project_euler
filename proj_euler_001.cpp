@@ -7,9 +7,10 @@ using namespace std;
 
 
 int main() {
-    int t,*n,i,j,k,c5,n1;
+    uint64_t t,*n,k,n1;
+    unsigned int i,j,c5;
     cin>>t;
-    n=new int[t];
+    n=new uint64_t [t];
     for(i=0;i<t;i++)
         cin>>*(n+i);
     k=0;
@@ -17,7 +18,7 @@ int main() {
     for(i=0;i<t;i++)
     {
         k=0;
-
+        n[i]--;
         n1=n[i];
         n1/=3;
         n1=(n1*(n1+1))/2;
